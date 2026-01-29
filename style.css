@@ -71,7 +71,6 @@ h6 {
   font-weight: 500;
   position: relative;
   transition: var(--transition);
-  text-align: center;
 }
 
 .nav-link:hover {
@@ -98,13 +97,10 @@ h6 {
   border: none;
   color: var(--light-color);
   font-size: 1.5rem;
-  padding: 0.5rem;
 }
 
 .cart-btn {
   position: relative;
-  display: inline-flex;
-  align-items: center;
 }
 
 .cart-count {
@@ -126,7 +122,6 @@ h6 {
 /* Hero Section */
 .hero {
   height: 100vh;
-  min-height: 600px;
   background:
     linear-gradient(rgba(44, 24, 16, 0.7), rgba(44, 24, 16, 0.9)),
     url("https://images.unsplash.com/photo-1578301978018-3005759f48f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80");
@@ -140,37 +135,33 @@ h6 {
   color: var(--light-color);
   position: relative;
   overflow: hidden;
-  padding: 0 1rem;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 1rem;
-  width: 100%;
-  max-width: 800px;
+  padding: 2rem;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   opacity: 0;
   transform: translateY(30px);
   animation: revealText 1s ease forwards;
-  line-height: 1.2;
 }
 
 .hero h1 span {
   color: var(--secondary-color);
   font-family: "Dancing Script", cursive;
   display: block;
-  font-size: 2rem;
+  font-size: 3.5rem;
   margin-top: 0.5rem;
 }
 
 .subtitle {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
   max-width: 600px;
   margin-left: auto;
@@ -178,8 +169,6 @@ h6 {
   opacity: 0;
   transform: translateY(30px);
   animation: revealText 1s ease 0.5s forwards;
-  line-height: 1.6;
-  padding: 0 1rem;
 }
 
 @keyframes revealText {
@@ -191,14 +180,14 @@ h6 {
 
 .btn-explore {
   display: inline-block;
-  padding: 12px 30px;
+  padding: 15px 40px;
   background-color: transparent;
   color: var(--light-color);
   border: 2px solid var(--secondary-color);
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -206,7 +195,6 @@ h6 {
   opacity: 0;
   transform: translateY(30px);
   animation: revealText 1s ease 1s forwards;
-  margin: 0 auto;
 }
 
 .btn-explore::before {
@@ -230,7 +218,7 @@ h6 {
 }
 
 .btn-explore i {
-  margin-left: 8px;
+  margin-left: 10px;
   animation: bounce 2s infinite;
 }
 
@@ -243,10 +231,10 @@ h6 {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
   }
   60% {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
   }
 }
 
@@ -262,26 +250,26 @@ h6 {
 
 .floating {
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgba(212, 167, 106, 0.3);
   animation: float 6s ease-in-out infinite;
 }
 
 .brush {
   top: 20%;
-  left: 5%;
+  left: 10%;
   animation-delay: 0s;
 }
 
 .palette {
   top: 60%;
-  right: 5%;
+  right: 15%;
   animation-delay: 2s;
 }
 
 .frame {
   bottom: 30%;
-  left: 10%;
+  left: 20%;
   animation-delay: 4s;
 }
 
@@ -291,33 +279,33 @@ h6 {
     transform: translateY(0) rotate(0deg);
   }
   50% {
-    transform: translateY(-15px) rotate(10deg);
+    transform: translateY(-20px) rotate(10deg);
   }
 }
 
 /* Scroll Indicator */
 .scroll-indicator {
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .mouse {
-  width: 25px;
-  height: 40px;
+  width: 30px;
+  height: 50px;
   border: 2px solid var(--secondary-color);
-  border-radius: 15px;
+  border-radius: 20px;
   position: relative;
 }
 
 .wheel {
-  width: 3px;
-  height: 6px;
+  width: 4px;
+  height: 8px;
   background-color: var(--secondary-color);
   border-radius: 2px;
   position: absolute;
-  top: 8px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   animation: scrollWheel 2s infinite;
@@ -325,33 +313,31 @@ h6 {
 
 @keyframes scrollWheel {
   0% {
-    top: 8px;
+    top: 10px;
     opacity: 1;
   }
   100% {
-    top: 25px;
+    top: 30px;
     opacity: 0;
   }
 }
 
 /* Sections */
 .section-padding {
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 40px;
-  padding: 0 1rem;
+  margin-bottom: 60px;
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--dark-color);
   margin-bottom: 15px;
   position: relative;
   display: inline-block;
-  padding: 0 1rem;
 }
 
 .section-title span {
@@ -361,34 +347,31 @@ h6 {
 .section-title::after {
   content: "";
   position: absolute;
-  bottom: -8px;
+  bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
+  width: 80px;
   height: 3px;
   background-color: var(--secondary-color);
 }
 
 .section-subtitle {
   color: #666;
-  font-size: 1rem;
+  font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto;
-  padding: 0 1rem;
-  line-height: 1.6;
 }
 
 /* About Section */
 .about-img {
   position: relative;
-  margin-bottom: 2rem;
 }
 
 .vintage-frame {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .vintage-frame img {
@@ -403,21 +386,21 @@ h6 {
 
 .frame-decoration {
   position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
   border: 2px solid var(--secondary-color);
   pointer-events: none;
   opacity: 0.5;
 }
 
 .about-content {
-  padding: 0;
+  padding-left: 30px;
 }
 
 .about-content .lead {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: var(--dark-color);
   margin-bottom: 20px;
   line-height: 1.6;
@@ -425,56 +408,50 @@ h6 {
 
 .features {
   display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-top: 30px;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
 .feature-item {
   text-align: center;
-  padding: 20px 15px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  padding: 0 15px;
 }
 
 .feature-item i {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--primary-color);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .feature-item h5 {
   font-size: 1rem;
   color: var(--dark-color);
-  margin: 0;
 }
 
 /* Gallery Section */
 .gallery {
   background-color: #f8f4ee;
-  padding: 60px 0;
 }
 
 .painting-card {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   transition: var(--transition);
   height: 100%;
-  margin-bottom: 2rem;
 }
 
 .painting-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .painting-img {
   position: relative;
   overflow: hidden;
-  height: 200px;
+  height: 250px;
 }
 
 .painting-img img {
@@ -507,7 +484,7 @@ h6 {
 }
 
 .btn-view {
-  padding: 8px 20px;
+  padding: 10px 25px;
   background-color: var(--secondary-color);
   color: var(--dark-color);
   border: none;
@@ -515,42 +492,39 @@ h6 {
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
-  font-size: 0.9rem;
 }
 
 .btn-view:hover {
   background-color: var(--light-color);
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .painting-info {
-  padding: 15px;
+  padding: 20px;
 }
 
 .painting-info h4 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 5px;
   color: var(--dark-color);
-  line-height: 1.3;
 }
 
 .artist {
   color: var(--primary-color);
   font-style: italic;
-  margin-bottom: 8px;
-  font-size: 0.9rem;
+  margin-bottom: 10px;
 }
 
 .price {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--accent-color);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .btn-add-cart {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   background-color: var(--primary-color);
   color: white;
   border: none;
@@ -558,7 +532,6 @@ h6 {
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
-  font-size: 0.9rem;
 }
 
 .btn-add-cart:hover {
@@ -568,27 +541,25 @@ h6 {
 /* Artists Section */
 .artist-card {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   transition: var(--transition);
   height: 100%;
-  margin-bottom: 2rem;
 }
 
 .artist-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
 }
 
 .artist-img {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto 15px;
-  border: 4px solid var(--light-color);
+  margin: 0 auto 20px;
+  border: 5px solid var(--light-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -601,42 +572,32 @@ h6 {
 .artist-card h4 {
   margin-bottom: 5px;
   color: var(--dark-color);
-  font-size: 1.2rem;
 }
 
 .artist-era {
   color: var(--primary-color);
   font-style: italic;
-  margin-bottom: 10px;
-  font-size: 0.9rem;
-}
-
-.artist-card p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: #666;
+  margin-bottom: 15px;
 }
 
 /* Contact Section */
 .contact-form {
   background-color: white;
-  padding: 25px;
+  padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  margin-bottom: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .form-control {
-  padding: 12px;
+  padding: 15px;
   border: 2px solid #eee;
   border-radius: 8px;
   font-size: 1rem;
   transition: var(--transition);
-  width: 100%;
 }
 
 .form-control:focus {
@@ -646,12 +607,12 @@ h6 {
 
 .btn-submit {
   width: 100%;
-  padding: 12px;
+  padding: 15px;
   background-color: var(--primary-color);
   color: white;
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
@@ -659,62 +620,51 @@ h6 {
 
 .btn-submit:hover {
   background-color: var(--accent-color);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .btn-submit i {
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .contact-info {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .info-item {
-  padding: 20px;
+  padding: 30px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   transition: var(--transition);
-  margin-bottom: 1.5rem;
-  text-align: center;
 }
 
 .info-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
 }
 
 .info-item i {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--primary-color);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .info-item h5 {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: var(--dark-color);
-  font-size: 1rem;
-}
-
-.info-item p {
-  color: #666;
-  font-size: 0.9rem;
-  margin: 0;
 }
 
 /* Footer */
 .footer {
   background-color: var(--dark-color);
   color: var(--light-color);
-  padding: 40px 0 20px;
+  padding: 60px 0 30px;
 }
 
 .footer-brand {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Dancing Script", cursive;
-  margin-bottom: 15px;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 .footer-brand span {
@@ -724,55 +674,51 @@ h6 {
 .footer-text {
   color: #aaa;
   max-width: 300px;
-  margin: 0 auto 20px;
-  text-align: center;
-  font-size: 0.9rem;
-  line-height: 1.5;
 }
 
 .social-links {
   display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 30px;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 .social-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--light-color);
   border-radius: 50%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: var(--transition);
 }
 
 .social-links a:hover {
   background-color: var(--secondary-color);
   color: var(--dark-color);
-  transform: translateY(-3px);
+  transform: translateY(-5px);
 }
 
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
-  padding-top: 20px;
+  margin-top: 50px;
+  padding-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #aaa;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 /* Cart Sidebar */
 .cart-sidebar {
   position: fixed;
   top: 0;
-  right: -100%;
-  width: 100%;
+  right: -400px;
+  width: 350px;
   height: 100vh;
   background-color: white;
+  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
   z-index: 9999;
   transition: var(--transition);
   display: flex;
@@ -784,7 +730,7 @@ h6 {
 }
 
 .cart-header {
-  padding: 15px;
+  padding: 20px;
   background-color: var(--dark-color);
   color: white;
   display: flex;
@@ -794,48 +740,41 @@ h6 {
 
 .cart-header h4 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .cart-header h4 i {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .btn-close-cart {
   background: none;
   border: none;
   color: white;
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
   line-height: 1;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .cart-items {
   flex: 1;
-  padding: 15px;
+  padding: 20px;
   overflow-y: auto;
 }
 
 .cart-item {
   display: flex;
   align-items: center;
-  padding: 12px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #eee;
 }
 
 .cart-item-img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 5px;
   overflow: hidden;
-  margin-right: 12px;
-  flex-shrink: 0;
+  margin-right: 15px;
 }
 
 .cart-item-img img {
@@ -846,22 +785,16 @@ h6 {
 
 .cart-item-info {
   flex: 1;
-  min-width: 0;
 }
 
 .cart-item-title {
   font-weight: 600;
-  margin-bottom: 4px;
-  font-size: 0.9rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-bottom: 5px;
 }
 
 .cart-item-price {
   color: var(--primary-color);
   font-weight: 700;
-  font-size: 0.9rem;
 }
 
 .cart-item-remove {
@@ -869,29 +802,26 @@ h6 {
   border: none;
   color: #ff6b6b;
   cursor: pointer;
-  font-size: 1.1rem;
-  padding: 5px;
-  margin-left: 10px;
+  font-size: 1.2rem;
 }
 
 .cart-footer {
-  padding: 15px;
+  padding: 20px;
   border-top: 1px solid #eee;
-  background: #f9f9f9;
 }
 
 .cart-total {
   display: flex;
   justify-content: space-between;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: var(--dark-color);
 }
 
 .btn-checkout {
   width: 100%;
-  padding: 12px;
+  padding: 15px;
   background-color: var(--primary-color);
   color: white;
   border: none;
@@ -899,7 +829,6 @@ h6 {
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
-  font-size: 0.9rem;
 }
 
 .btn-checkout:hover {
@@ -924,11 +853,33 @@ h6 {
   visibility: visible;
 }
 
+/* Back to Top */
+.btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* WhatsApp Float Button */
 .whatsapp-float {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   z-index: 99;
 }
 
@@ -936,14 +887,14 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background-color: #25d366;
   color: white;
   border-radius: 50%;
   text-decoration: none;
-  font-size: 1.5rem;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  font-size: 1.8rem;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
   position: relative;
   transition: all 0.3s ease;
   animation: floatWhatsApp 3s ease-in-out infinite;
@@ -955,14 +906,14 @@ h6 {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
   }
 }
 
 .whatsapp-btn:hover {
   background-color: #128c7e;
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
 }
 
 .whatsapp-btn:active {
@@ -970,13 +921,41 @@ h6 {
 }
 
 .whatsapp-tooltip {
-  display: none;
+  position: absolute;
+  right: 70px;
+  background-color: #075e54;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  transform: translateX(10px);
+}
+
+.whatsapp-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #075e54;
+}
+
+.whatsapp-btn:hover .whatsapp-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 
 .pulse-ring {
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border: 2px solid #25d366;
   border-radius: 50%;
   opacity: 0;
@@ -989,27 +968,170 @@ h6 {
     opacity: 0;
   }
   50% {
-    opacity: 0.2;
+    opacity: 0.3;
   }
   100% {
-    transform: scale(1.1);
+    transform: scale(1.2);
     opacity: 0;
   }
 }
 
+/* WhatsApp Badge Counter */
+.whatsapp-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff4757;
+  color: white;
+  font-size: 0.7rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  animation: badgePulse 2s infinite;
+}
+
+@keyframes badgePulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* WhatsApp Chat Widget (Opsional) */
+.whatsapp-chat-widget {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 300px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  z-index: 9998;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-chat-widget.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.chat-header {
+  background-color: #075e54;
+  color: white;
+  padding: 15px;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-header-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.chat-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.chat-body {
+  padding: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.chat-message.incoming {
+  background-color: #f0f0f0;
+  margin-right: auto;
+}
+
+.chat-message.outgoing {
+  background-color: #dcf8c6;
+  margin-left: auto;
+}
+
+.chat-input {
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.chat-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+/* Responsive WhatsApp Button */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 80px;
+    right: 20px;
+  }
+
+  .whatsapp-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.6rem;
+  }
+
+  .whatsapp-tooltip {
+    display: none;
+  }
+
+  .whatsapp-chat-widget {
+    width: calc(100% - 40px);
+    right: 20px;
+    left: 20px;
+    bottom: 100px;
+  }
+}
 /* Modal */
 .modal-content {
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
   border: none;
-  margin: 1rem;
 }
 
 .modal-header {
   background-color: var(--dark-color);
   color: white;
   border-bottom: none;
-  padding: 15px;
 }
 
 .btn-close {
@@ -1017,13 +1139,10 @@ h6 {
   border-radius: 50%;
   opacity: 1;
   padding: 5px;
-  filter: invert(1);
 }
 
 .modal-body {
-  padding: 20px;
-  max-height: 70vh;
-  overflow-y: auto;
+  padding: 30px;
 }
 
 /* Animation Classes */
@@ -1031,16 +1150,16 @@ h6 {
 .reveal-left,
 .reveal-right {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
 }
 
 .reveal-left {
-  transform: translateX(-30px);
+  transform: translateX(-50px);
 }
 
 .reveal-right {
-  transform: translateX(30px);
+  transform: translateX(50px);
 }
 
 .reveal-up.active,
@@ -1050,221 +1169,76 @@ h6 {
   transform: translate(0);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  /* Hero Section */
+/* Responsive */
+@media (max-width: 992px) {
   .hero h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .hero h1 span {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
-  .subtitle {
-    font-size: 0.95rem;
-  }
-
-  /* Navigation */
-  .navbar-brand {
-    font-size: 1.5rem;
-  }
-
-  .navbar-collapse {
-    background-color: rgba(44, 24, 16, 0.98);
-    padding: 1rem;
-    margin-top: 1rem;
-    border-radius: 10px;
-  }
-
-  /* Sections */
   .section-title {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
-  .section-subtitle {
-    font-size: 0.95rem;
+  .features {
+    flex-direction: column;
+    gap: 30px;
   }
 
-  /* Cards */
-  .painting-card,
-  .artist-card,
-  .info-item {
-    margin-bottom: 1.5rem;
+  .social-links {
+    justify-content: flex-start;
+    margin-top: 30px;
   }
 
-  /* Grid Layout */
-  .row {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+  .cart-sidebar {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
   }
 
-  .col-md-6,
-  .col-md-4,
-  .col-lg-6,
-  .col-lg-4 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  .hero h1 span {
+    font-size: 2rem;
   }
 
-  /* Contact Form */
+  .section-padding {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
   .contact-form {
-    padding: 20px;
-  }
-
-  /* Floating Elements */
-  .floating {
-    font-size: 1.2rem;
+    padding: 30px 20px;
   }
 }
 
 @media (max-width: 576px) {
-  /* Hero Section */
-  .hero {
-    min-height: 500px;
-  }
-
   .hero h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .hero h1 span {
-    font-size: 1.6rem;
-  }
-
-  .btn-explore {
-    padding: 10px 25px;
-    font-size: 0.9rem;
-  }
-
-  /* Section Padding */
-  .section-padding {
-    padding: 50px 0;
-  }
-
-  /* Typography */
-  .section-title {
-    font-size: 1.6rem;
-  }
-
-  .section-subtitle {
-    font-size: 0.9rem;
-  }
-
-  /* Cards */
-  .painting-img {
-    height: 180px;
-  }
-
-  .artist-img {
-    width: 100px;
-    height: 100px;
-  }
-
-  /* WhatsApp Button */
-  .whatsapp-btn {
-    width: 45px;
-    height: 45px;
-    font-size: 1.3rem;
-  }
-
-  .pulse-ring {
-    width: 55px;
-    height: 55px;
-  }
-}
-
-@media (max-width: 380px) {
-  .hero h1 {
-    font-size: 1.6rem;
-  }
-
-  .hero h1 span {
-    font-size: 1.4rem;
-  }
-
-  .section-title {
-    font-size: 1.4rem;
-  }
-
-  .painting-info h4 {
-    font-size: 1rem;
-  }
-
-  .price {
-    font-size: 1.1rem;
-  }
-}
-
-/* Touch Device Optimizations */
-@media (hover: none) and (pointer: coarse) {
-  .painting-card:hover {
-    transform: none;
-  }
-
-  .artist-card:hover {
-    transform: none;
-  }
-
-  .info-item:hover {
-    transform: none;
-  }
-
-  .btn-explore:hover::before {
-    left: -100%;
-  }
-
-  .btn-explore:hover {
-    color: var(--light-color);
-  }
-
-  /* Add active states for touch */
-  .painting-card:active {
-    transform: scale(0.98);
-  }
-
-  .btn-add-cart:active {
-    transform: scale(0.95);
-  }
-}
-
-/* Landscape Mode */
-@media (max-height: 500px) and (orientation: landscape) {
-  .hero {
-    min-height: 400px;
-    padding: 2rem 0;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .hero h1 span {
-    font-size: 1.5rem;
-  }
-
-  .subtitle {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-
-  .btn-explore {
-    padding: 8px 20px;
-    font-size: 0.9rem;
-  }
-}
-
-/* High Density Screens */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .floating {
     font-size: 2rem;
   }
 
-  .btn-view,
-  .btn-add-cart,
-  .btn-submit {
-    font-weight: 500;
+  .hero h1 span {
+    font-size: 1.8rem;
+  }
+
+  .btn-explore {
+    padding: 12px 30px;
+  }
+
+  .cart-sidebar {
+    width: 100%;
   }
 }
