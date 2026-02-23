@@ -1941,3 +1941,179 @@ img {
     transform: none;
   }
 }
+
+/* ==================== */
+/* PERBAIKAN TAMPILAN MOBILE UNTUK INDEX.HTML */
+/* ==================== */
+
+/* Memastikan hero section memiliki padding yang cukup di mobile */
+@media (max-width: 768px) {
+  /* Hero Section - dibuat lebih rapi seperti page-header di galeri.html */
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 20px 15px;
+    background: rgba(44, 24, 16, 0.3);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(212, 167, 106, 0.2);
+    margin-top: 20px;
+  }
+
+  .hero-image-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    border-width: 3px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .hero h1 span {
+    font-size: 1.8rem;
+    margin-top: 5px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .btn-explore {
+    padding: 12px 25px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  /* Scroll indicator disembunyikan di mobile karena sering mengganggu */
+  .scroll-indicator {
+    display: none;
+  }
+
+  /* Floating elements diperkecil agar tidak mengganggu */
+  .floating {
+    font-size: 1.5rem;
+    opacity: 0.2;
+  }
+
+  .brush {
+    top: 10%;
+    left: 5%;
+  }
+
+  .palette {
+    top: 70%;
+    right: 5%;
+  }
+
+  .frame {
+    bottom: 20%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content {
+    padding: 25px 15px;
+  }
+
+  .hero-image-circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero h1 span {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .btn-explore {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  /* Floating elements disembunyikan di layar sangat kecil */
+  .floating {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-content {
+    padding: 20px 12px;
+  }
+
+  .hero-image-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero h1 span {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+/* Landscape orientation */
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero-image-circle {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero h1 span {
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .floating {
+    display: none;
+  }
+}
