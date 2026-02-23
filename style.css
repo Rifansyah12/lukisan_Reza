@@ -716,14 +716,6 @@ h6 {
   transform: translateX(5px);
 }
 
-/* Responsive untuk See More Button */
-@media (max-width: 768px) {
-  .btn-see-more {
-    padding: 12px 30px;
-    font-size: 1rem;
-  }
-}
-
 /* Artists Section */
 .artists {
   background: linear-gradient(135deg, #fff 0%, #f8f4ee 100%);
@@ -873,46 +865,6 @@ h6 {
   border-radius: 20px;
   display: inline-block;
   margin-top: 10px;
-}
-
-/* Responsive untuk Testimonials */
-@media (max-width: 992px) {
-  .testimonial-img.square {
-    width: 180px;
-    height: 135px;
-  }
-}
-
-@media (max-width: 768px) {
-  .testimonial-card {
-    padding: 30px 20px;
-    margin-bottom: 30px;
-  }
-
-  .testimonial-img.square {
-    width: 160px;
-    height: 120px;
-  }
-}
-
-@media (max-width: 576px) {
-  .testimonial-img.square {
-    width: 140px;
-    height: 105px;
-  }
-}
-
-/* Responsive untuk Testimonials */
-@media (max-width: 768px) {
-  .testimonial-card {
-    padding: 30px 20px;
-    margin-bottom: 30px;
-  }
-
-  .testimonial-img {
-    width: 80px;
-    height: 80px;
-  }
 }
 
 /* Contact Section */
@@ -1366,100 +1318,6 @@ h6 {
   transform: translate(0);
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-  .hero h1 {
-    font-size: 3rem;
-  }
-
-  .hero h1 span {
-    font-size: 2.5rem;
-  }
-
-  .section-title {
-    font-size: 2.5rem;
-  }
-
-  .features {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .social-links {
-    justify-content: flex-start;
-    margin-top: 30px;
-  }
-
-  .cart-sidebar {
-    width: 300px;
-  }
-
-  .about-content {
-    padding: 30px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero h1 span {
-    font-size: 2rem;
-  }
-
-  .section-padding {
-    padding: 70px 0;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .about-content {
-    padding-left: 0;
-    margin-top: 40px;
-  }
-
-  .about-img {
-    padding: 0;
-  }
-
-  .vintage-frame {
-    transform: none;
-  }
-
-  .contact-form {
-    padding: 30px 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero h1 span {
-    font-size: 1.8rem;
-  }
-
-  .btn-explore {
-    padding: 12px 30px;
-  }
-
-  .cart-sidebar {
-    width: 100%;
-  }
-
-  .about-content {
-    padding: 20px;
-  }
-
-  .feature-item {
-    padding: 15px;
-  }
-}
-
 /* Page Header */
 .page-header {
   padding: 150px 0 50px;
@@ -1501,10 +1359,257 @@ h6 {
   width: 100%;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .page-title {
+/* ==================== */
+/* MOBILE RESPONSIVE OPTIMIZATION */
+/* ==================== */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  /* Hero Section */
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h1 span {
     font-size: 2.5rem;
+  }
+
+  /* Section Titles */
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  /* About Section */
+  .features {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature-item {
+    padding: 15px;
+  }
+
+  /* Footer */
+  .social-links {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+
+  /* Cart Sidebar */
+  .cart-sidebar {
+    width: 320px;
+  }
+
+  .about-content {
+    padding: 30px;
+  }
+
+  /* Testimonials */
+  .testimonial-img.square {
+    width: 180px;
+    height: 135px;
+  }
+}
+
+/* Mobile Landscape & Small Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Navigation */
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav {
+    background-color: var(--dark-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    text-align: center;
+    padding: 12px 0 !important;
+    margin: 0;
+  }
+
+  .nav-link::after {
+    bottom: 5px;
+  }
+
+  /* Hero Section */
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero h1 span {
+    font-size: 1.8rem;
+  }
+
+  .hero-image-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .btn-explore {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  /* Sections */
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  /* About Section */
+  .about-content {
+    padding: 25px;
+    margin-top: 30px;
+  }
+
+  .about-content .lead {
+    font-size: 1.1rem;
+  }
+
+  .about-img {
+    padding: 0;
+  }
+
+  .vintage-frame {
+    transform: none;
+  }
+
+  .features {
+    gap: 15px;
+  }
+
+  /* Gallery Section */
+  .painting-card {
+    margin-bottom: 20px;
+  }
+
+  .painting-img {
+    height: 220px;
+  }
+
+  .painting-info h4 {
+    font-size: 1.2rem;
+  }
+
+  .price {
+    font-size: 1.3rem;
+  }
+
+  /* Artists Section */
+  .artist-card {
+    padding: 25px;
+    margin-bottom: 20px;
+  }
+
+  .artist-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Testimonials Section */
+  .testimonials {
+    padding: 60px 0;
+  }
+
+  .testimonial-card {
+    padding: 30px 20px;
+    margin-bottom: 25px;
+  }
+
+  .testimonial-img.square {
+    width: 160px;
+    height: 120px;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* Contact Section */
+  .contact-form {
+    padding: 25px 20px;
+    margin: 0 15px;
+  }
+
+  .form-control {
+    padding: 12px;
+  }
+
+  .contact-info {
+    margin-top: 40px;
+  }
+
+  .info-item {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info-item i {
+    font-size: 2rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-brand {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .footer-text {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+
+  /* Cart Sidebar */
+  .cart-sidebar {
+    width: 100%;
+    right: -100%;
+  }
+
+  /* Buttons */
+  .btn-see-more {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  /* Page Header */
+  .page-header {
+    padding: 120px 0 40px;
+  }
+
+  .page-title {
+    font-size: 2.2rem;
   }
 
   .page-subtitle {
@@ -1512,7 +1617,327 @@ h6 {
     padding: 0 20px;
   }
 
+  /* Modal */
+  .modal-body {
+    padding: 20px;
+  }
+}
+
+/* Mobile Portrait (max-width: 576px) */
+@media (max-width: 576px) {
+  /* Hero Section */
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero h1 span {
+    font-size: 1.5rem;
+  }
+
+  .hero-image-circle {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .btn-explore {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+  }
+
+  .floating {
+    font-size: 1.5rem;
+  }
+
+  /* Section Titles */
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  /* About Section */
+  .about-content {
+    padding: 20px;
+  }
+
+  .feature-item {
+    padding: 12px;
+  }
+
+  .feature-item i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .feature-item h5 {
+    font-size: 0.9rem;
+  }
+
+  /* Gallery Section */
+  .painting-img {
+    height: 200px;
+  }
+
+  .painting-info {
+    padding: 15px;
+  }
+
+  .painting-info h4 {
+    font-size: 1.1rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .btn-add-cart {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .btn-view {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Testimonials Section */
+  .testimonial-img.square {
+    width: 140px;
+    height: 105px;
+  }
+
+  .testimonial-rating {
+    font-size: 1rem;
+  }
+
+  .testimonial-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .customer-location {
+    font-size: 0.8rem;
+  }
+
+  .purchased-painting {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+
+  /* Contact Section */
+  .btn-submit {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .footer-brand {
+    font-size: 1.6rem;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+
+  /* Cart Sidebar */
+  .cart-header h4 {
+    font-size: 1.1rem;
+  }
+
+  .cart-item-title {
+    font-size: 0.9rem;
+  }
+
+  .cart-item-price {
+    font-size: 0.85rem;
+  }
+
+  .cart-total {
+    font-size: 1.1rem;
+  }
+
+  .btn-checkout {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  /* WhatsApp Button */
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .whatsapp-tooltip {
+    display: none;
+  }
+
+  /* Back to Top */
+  .btn-back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  /* Page Header */
   .page-header {
-    padding: 120px 0 40px;
+    padding: 100px 0 30px;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  /* Modal */
+  .modal-title {
+    font-size: 1.2rem;
+  }
+
+  .modal-body {
+    padding: 15px;
+  }
+}
+
+/* Small Mobile (max-width: 375px) */
+@media (max-width: 375px) {
+  /* Hero Section */
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero h1 span {
+    font-size: 1.3rem;
+  }
+
+  .hero-image-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .btn-explore {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+
+  /* Section Titles */
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  /* Gallery Section */
+  .painting-img {
+    height: 180px;
+  }
+
+  /* Testimonials Section */
+  .testimonial-img.square {
+    width: 120px;
+    height: 90px;
+  }
+
+  /* Contact Section */
+  .contact-form {
+    padding: 20px 15px;
+  }
+
+  /* Footer */
+  .footer-brand {
+    font-size: 1.4rem;
+  }
+
+  .social-links a {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Fix for very small devices */
+@media (max-width: 320px) {
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+
+  .hero h1 span {
+    font-size: 1.1rem;
+  }
+
+  .hero-image-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .btn-explore {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Fix for landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 100px 0;
+  }
+
+  .hero-image-circle {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero h1 span {
+    font-size: 1.3rem;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix for touch devices hover effects */
+@media (hover: none) and (pointer: coarse) {
+  .painting-card:hover {
+    transform: none;
+  }
+
+  .painting-overlay {
+    opacity: 1;
+    background-color: rgba(139, 69, 19, 0.6);
+  }
+
+  .feature-item:hover {
+    transform: none;
+  }
+
+  .testimonial-card:hover {
+    transform: none;
   }
 }
