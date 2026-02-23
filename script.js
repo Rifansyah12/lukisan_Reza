@@ -458,7 +458,7 @@ function initWhatsApp() {
         </div>
         <div class="chat-input">
             <input type="text" placeholder="Ketik pesan..." readonly 
-                   onclick="window.open('https://wa.me/6281234567890?text=Halo%20Galeri%20Retro,%20saya%20tertarik%20dengan%20koleksi%20lukisan%20Anda', '_blank')">
+                   onclick="window.open('https://wa.me/6289653131323?text=Halo%20Galeri%20Retro,%20saya%20tertarik%20dengan%20koleksi%20lukisan%20Anda', '_blank')">
         </div>
     `;
 
