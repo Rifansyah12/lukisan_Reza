@@ -6,49 +6,46 @@
     <title>Galeri Lukisan Retro - Masterpieces of the Past</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Dancing+Script:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
   <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <i class="fas fa-palette"></i> Galeri<span>Reza</span>
+          <i class="fas fa-palette"></i> Reza -<span>Art-Shop</span>
         </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
+          data-bs-target="#navbarNav">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Beranda</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Tentang</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery">Koleksi</a>
+              <a class="nav-link" href="/galeri.html">Galeri</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#artists">Pelukis</a>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Kontak</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link cart-btn" href="#cart"
@@ -69,12 +66,22 @@
           <div class="floating palette"><i class="fas fa-palette"></i></div>
           <div class="floating frame"><i class="fas fa-border-all"></i></div>
         </div>
-        <h1 class="reveal-text">Masterpieces <span>of the Past</span></h1>
+
+        <!-- Gambar Bulat Ditambahkan -->
+        <div class="hero-image-circle">
+          <img
+            src="assets/icons/bg-art-shop.jpg"
+            alt="Reza ArtShop"
+            class="rounded-circle hero-logo" />
+        </div>
+
+        <h1 class="reveal-text">Reza <span>Art Shop</span></h1>
         <p class="subtitle">
-          Temukan keindahan lukisan klasik dari era keemasan seni rupa
+          Discover the beauty of classic paintings from the golden era of fine
+          art
         </p>
         <a href="#gallery" class="btn-explore"
-          >Jelajahi Koleksi <i class="fas fa-arrow-down"></i
+          >Explore Collection<i class="fas fa-arrow-down"></i
         ></a>
       </div>
       <div class="scroll-indicator">
@@ -92,38 +99,39 @@
             <div class="about-img reveal-left">
               <div class="vintage-frame">
                 <img
-                  src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                  alt="Galeri Retro"
-                />
+                  src="assets/gambar/IMG-20250121-WA0011.jpg"
+                  alt="Galeri Reza" />
                 <div class="frame-decoration"></div>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="about-content reveal-right">
-              <h2 class="section-title">Galeri <span>Retro</span></h2>
+              <h2 class="section-title">Galeri <span>Reza</span></h2>
               <p class="lead">
-                Selamat datang di dunia keindahan yang abadi. Galeri Retro
-                menghadirkan koleksi lukisan klasik terpilih dari
-                maestro-maestro ternama abad 17-19.
+                Welcome to Reza Art Shop - the premier destination for art
+                lovers who appreciate beauty and quality. We present an
+                exclusive collection of handmade paintings crafted with a
+                professional touch and selected premium materials.
               </p>
               <p>
-                Setiap lukisan di galeri kami dipilih dengan ketelitian tinggi,
-                menjamin keaslian dan kualitas terbaik. Kami menghubungkan
-                pecinta seni dengan karya-karya yang telah melewati ujian waktu.
+                Every artwork we offer is a perfect blend of artistic creativity
+                and the highest quality standards, resulting in paintings that
+                are not only beautiful to look at but also hold high artistic
+                value to beautify your space.
               </p>
               <div class="features">
                 <div class="feature-item">
-                  <i class="fas fa-certificate"></i>
-                  <h5>Garansi Keaslian</h5>
+                  <i class="fas fa-crown"></i>
+                  <h5>Premium Quality</h5>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-shipping-fast"></i>
-                  <h5>Pengamanan Ekstra</h5>
+                  <i class="fas fa-hand-sparkles"></i>
+                  <h5>Exclusive Handmade</h5>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-history"></i>
-                  <h5>Sejarah Terlengkap</h5>
+                  <i class="fas fa-truck"></i>
+                  <h5>Safe Packing</h5>
                 </div>
               </div>
             </div>
@@ -149,15 +157,13 @@
               <div class="painting-img">
                 <img
                   src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Starry Night"
-                />
+                  alt="Starry Night" />
                 <div class="painting-overlay">
                   <button
                     class="btn-view"
                     data-bs-toggle="modal"
                     data-bs-target="#paintingModal"
-                    data-painting="1"
-                  >
+                    data-painting="1">
                     Detail
                   </button>
                 </div>
@@ -177,15 +183,13 @@
               <div class="painting-img">
                 <img
                   src="https://images.unsplash.com/photo-1578301978018-3005759f48f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Mona Lisa"
-                />
+                  alt="Mona Lisa" />
                 <div class="painting-overlay">
                   <button
                     class="btn-view"
                     data-bs-toggle="modal"
                     data-bs-target="#paintingModal"
-                    data-painting="2"
-                  >
+                    data-painting="2">
                     Detail
                   </button>
                 </div>
@@ -205,15 +209,13 @@
               <div class="painting-img">
                 <img
                   src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="The Persistence of Memory"
-                />
+                  alt="The Persistence of Memory" />
                 <div class="painting-overlay">
                   <button
                     class="btn-view"
                     data-bs-toggle="modal"
                     data-bs-target="#paintingModal"
-                    data-painting="3"
-                  >
+                    data-painting="3">
                     Detail
                   </button>
                 </div>
@@ -227,68 +229,99 @@
             </div>
           </div>
         </div>
+
+        <!-- See More Button -->
+        <div class="text-center mt-5">
+          <a href="galeri.html" class="btn-see-more">
+            See More Collection <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- Artists Section -->
-    <section id="artists" class="artists section-padding">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Maestro <span>Lukisan</span></h2>
+          <h2 class="section-title">Customer <span>Testimonials</span></h2>
           <p class="section-subtitle">
-            Para pelukis legendaris di balik karya abadi
+            What our happy customers say about our paintings
           </p>
         </div>
 
         <div class="row">
           <div class="col-md-4">
-            <div class="artist-card reveal-left">
-              <div class="artist-img">
+            <div class="testimonial-card reveal-left">
+              <div class="testimonial-img square">
                 <img
-                  src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Vincent van Gogh"
-                />
+                  src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Lukisan Senja di Pantai" />
               </div>
-              <h4>Vincent van Gogh</h4>
-              <p class="artist-era">1853-1890</p>
-              <p>
-                Pelukis pasca-impresionis Belanda yang karyanya terkenal dengan
-                keindahan, emosi, dan warna yang intens.
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "The painting exceeded my expectations! The colors are vibrant
+                and the details are incredible. It now becomes the centerpiece
+                of my living room."
               </p>
+              <h4>Sarah Johnson</h4>
+              <p class="customer-location">Jakarta</p>
+              <p class="purchased-painting">Purchased: "Senja di Pantai"</p>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div class="artist-card reveal-up">
-              <div class="artist-img">
+            <div class="testimonial-card reveal-up">
+              <div class="testimonial-img square">
                 <img
-                  src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Leonardo da Vinci"
-                />
+                  src="https://images.unsplash.com/photo-1549887552-cb1071e3e45b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Lukisan Potret Ibu" />
               </div>
-              <h4>Leonardo da Vinci</h4>
-              <p class="artist-era">1452-1519</p>
-              <p>
-                Polymath Italia yang dianggap sebagai salah satu pemikir
-                terhebat di masa Renaissance.
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "I ordered a custom portrait for my wife's birthday. The artist
+                captured her personality perfectly. Very professional service
+                and excellent quality!"
               </p>
+              <h4>Michael Chen</h4>
+              <p class="customer-location">Surabaya</p>
+              <p class="purchased-painting">Purchased: "Potret Ibu" (Custom)</p>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div class="artist-card reveal-right">
-              <div class="artist-img">
+            <div class="testimonial-card reveal-right">
+              <div class="testimonial-img square">
                 <img
-                  src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Salvador Dali"
-                />
+                  src="https://images.unsplash.com/photo-1541701494587-c9a79b8bf7f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Lukisan Abstrak Geometris" />
               </div>
-              <h4>Salvador Dali</h4>
-              <p class="artist-era">1904-1989</p>
-              <p>
-                Seniman surrealis Spanyol yang dikenal dengan karya-karya yang
-                mengeksplorasi alam bawah sadar.
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="testimonial-text">
+                "Beautiful artwork and fast shipping. The packing was very
+                secure and the painting arrived in perfect condition. Will
+                definitely order again!"
               </p>
+              <h4>Emily Williams</h4>
+              <p class="customer-location">Bali</p>
+              <p class="purchased-painting">Purchased: "Abstrak Geometris"</p>
             </div>
           </div>
         </div>
@@ -316,8 +349,7 @@
                         type="text"
                         class="form-control"
                         placeholder="Nama Lengkap"
-                        required
-                      />
+                        required />
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -326,8 +358,7 @@
                         type="email"
                         class="form-control"
                         placeholder="Email"
-                        required
-                      />
+                        required />
                     </div>
                   </div>
                 </div>
@@ -336,8 +367,7 @@
                     class="form-control"
                     rows="5"
                     placeholder="Pesan Anda"
-                    required
-                  ></textarea>
+                    required></textarea>
                 </div>
                 <button type="submit" class="btn-submit">
                   Kirim Pesan <i class="fas fa-paper-plane"></i>
@@ -411,8 +441,7 @@
             <button
               type="button"
               class="btn-close"
-              data-bs-dismiss="modal"
-            ></button>
+              data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
             <div id="modalContent">
@@ -447,8 +476,7 @@
       <a
         href="https://wa.me/6281234567890?text=Halo%20Galeri%20Retro,%20saya%20tertarik%20dengan%20koleksi%20lukisan%20Anda"
         target="_blank"
-        class="whatsapp-btn"
-      >
+        class="whatsapp-btn">
         <i class="fab fa-whatsapp"></i>
         <span class="whatsapp-tooltip">Chat via WhatsApp</span>
         <div class="pulse-ring"></div>
